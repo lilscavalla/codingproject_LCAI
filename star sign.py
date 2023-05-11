@@ -16,11 +16,13 @@ if month == "January" and 20 <= date <= 31:
     sys.stdout.write("%s \n" % "You are an Aquarius")
 elif month == "Febraury" and 1 <= date <= 18:
     sys.stdout.write("%s \n" % "You are an Aquarius")
+    starsign = Aquarius
     
 elif month == "February" and 19 <= date <= 29:
     sys.stdout.write("%s \n" % "You are a Pisces")
 elif month == "March" and 1 <= date <= 20:
     sys.stdout.write("%s \n" % "You are a Pisces")
+    starsign = Pisces
 
 if month == "February" and date >= 30:
     sys.stdout.write("%s \n" % "Try again. Obviously you can't follow simple instructions.")
@@ -29,11 +31,13 @@ elif month == "March" and 21 <= date <= 31:
     sys.stdout.write("%s \n" % "You are an Aries")
 elif month == "April" and 1 <= date <= 19:
     sys.stdout.write("%s \n" % "You are an Aries")
+    starsign = Aries
     
 elif month == "April" and 20 <= date <= 30:
     sys.stdout.write("%s \n" % "You are a Taurus")
 elif month == "May" and 1 <= date <= 20:
     sys.stdout.write("%s \n" % "You are a Taurus")
+    starsign = Taurus
 
 if month == "April" and date >= 31:
     sys.stdout.write("%s \n" % "Try again. Obviously you can't follow simple instructions.")
@@ -42,11 +46,13 @@ elif month == "May" and 21 <= date <= 31:
     sys.stdout.write("%s \n" % "You are a Gemini")
 elif month == "June" and 1 <= date <= 20:
     sys.stdout.write("%s \n" % "You are a Gemini")
+    starsign = Gemini
     
 elif month == "June" and 21 <= date <= 30:
     sys.stdout.write("%s \n" % "You are a Cancer")
 elif month == "July" and 1 <= date <= 22:
     sys.stdout.write("%s \n" % "You are a Cancer")
+    starsign = Cancer
 
 if month == "June" and date >= 31:
     sys.stdout.write("%s \n" % "Try again. Obviously you can't follow simple instructions.")
@@ -55,16 +61,19 @@ elif month == "July" and 23 <= date <= 31:
     sys.stdout.write("%s \n" % "You are a Leo")
 elif month == "August" and 1 <= date <= 22:
     sys.stdout.write("%s \n" % "You are a Leo")
+    starsign = Leo
     
 elif month == "August" and 23 <= date <= 31:
     sys.stdout.write("%s \n" % "You are a Virgo")
 elif month == "September" and 1 <= date <= 22:
     sys.stdout.write("%s \n" % "You are a Virgo")
+    starsign = Virgo
     
 elif month == "September" and 23 <= date <= 30:
     sys.stdout.write("%s \n" % "You are a Libra")
 elif month == "October" and 1 <= date <= 22:
     sys.stdout.write("%s \n" % "You are a Libra")
+    starsign = Libra
 
 if month == "September" and date >= 31:
     sys.stdout.write("%s \n" % "Try again. Obviously you can't follow simple instructions.")
@@ -73,11 +82,13 @@ elif month == "October" and 23 <= date <= 31:
     sys.stdout.write("%s \n" % "You are a Scorpio")
 elif month == "November" and 1 <= date <= 21:
     sys.stdout.write("%s \n" % "You are a Scorpio")
+    starsign = Scorpio
     
 elif month == "November" and 21 <= date <= 30:
     sys.stdout.write("%s \n" % "You are a Sagittarius")
 elif month == "December" and 1 <= date <= 22:
     sys.stdout.write("%s \n" % "You are a Sagittarius")
+    starsign = Sagittarius
 
 if month == "November" and date >= 31:
     sys.stdout.write("%s \n" % "Try again. Obviously you can't follow simple instructions.")
@@ -86,6 +97,12 @@ elif month == "December" and 23 <= date <= 31:
     sys.stdout.write("%s \n" % "You are a Capricorn")
 elif month == "January" and 1 <= date <= 19:
     sys.stdout.write("%s \n" % "You are a Capricorn")
+    starsign(Capricorn)
 
 if month not in listofmonths or date not in range(1,32):
     sys.stdout.write("%s \n" % "Try again. Obviously you can't follow simple instructions")
+
+
+
+
+
