@@ -114,3 +114,162 @@ elif month == "january" and 1 <= date <= 19:
 
 if month not in listofmonths or date not in range(1,32):
     sys.stdout.write("%s \n" % "Try again. Obviously you can't follow simple instructions")
+    
+horoscope = input("What would you like to know about your future? LOVE? HEALTH? FAMILY? WORK? FINANCE? TRAVEL? ").lower()
+future = ["love", "health", "family", "work", "finance", "travel"]
+
+if horoscope == "love" and starsign[0]:
+    #randomly picks from 3 possible horoscopes
+if horoscope == "health" and starsign[0]:
+    #randomly picks from 3 possible horoscopes
+if horoscope == "family" and starsign[0]:
+    #randomly pick
+if horoscope == "work" and starsign[0]:
+    #randomly pick
+if horoscope == "finance" and starsign[0]:
+    #randomly pick
+if horoscope == "travel" and starsign[0]:
+    #randomly pick
+
+if horoscope == "love" and starsign[1]:
+    #randomly picks from 3 possible horoscopes
+if horoscope == "health" and starsign[1]:
+    #randomly picks from 3 possible horoscopes
+if horoscope == "family" and starsign[1]:
+    #randomly pick
+if horoscope == "work" and starsign[1]:
+    #randomly pick
+if horoscope == "finance" and starsign[1]:
+    #randomly pick
+if horoscope == "travel" and starsign[1]:
+    #randomly pick
+
+if horoscope == "love" and starsign[2]:
+    #randomly picks from 3 possible horoscopes
+if horoscope == "health" and starsign[2]:
+    #randomly picks from 3 possible horoscopes
+if horoscope == "family" and starsign[2]:
+    #randomly pick
+if horoscope == "work" and starsign[2]:
+    #randomly pick
+if horoscope == "finance" and starsign[2]:
+    #randomly pick
+if horoscope == "travel" and starsign[2]:
+    #randomly pick
+
+if horoscope == "love" and starsign[3]:
+    #randomly picks from 3 possible horoscopes
+if horoscope == "health" and starsign[3]:
+    #randomly picks from 3 possible horoscopes
+if horoscope == "family" and starsign[3]:
+    #randomly pick
+if horoscope == "work" and starsign[3]:
+    #randomly pick
+if horoscope == "finance" and starsign[3]:
+    #randomly pick
+if horoscope == "travel" and starsign[3]:
+    #randomly pick
+
+if horoscope == "love" and starsign[4]:
+    #randomly picks from 3 possible horoscopes
+if horoscope == "health" and starsign[4]:
+    #randomly picks from 3 possible horoscopes
+if horoscope == "family" and starsign[4]:
+    #randomly pick
+if horoscope == "work" and starsign[4]:
+    #randomly pick
+if horoscope == "finance" and starsign[4]:
+    #randomly pick
+if horoscope == "travel" and starsign[4]:
+    #randomly pick
+    
+if horoscope == "love" and starsign[5]:
+    #randomly picks from 3 possible horoscopes
+if horoscope == "health" and starsign[5]:
+    #randomly picks from 3 possible horoscopes
+if horoscope == "family" and starsign[5]:
+    #randomly pick
+if horoscope == "work" and starsign[5]:
+    #randomly pick
+if horoscope == "finance" and starsign[5]:
+    #randomly pick
+if horoscope == "travel" and starsign[5]:
+    #randomly pick
+    
+if horoscope == "love" and starsign[6]:
+    #randomly picks from 3 possible horoscopes
+if horoscope == "health" and starsign[6]:
+    #randomly picks from 3 possible horoscopes
+if horoscope == "family" and starsign[6]:
+    #randomly pick
+if horoscope == "work" and starsign[6]:
+    #randomly pick
+if horoscope == "finance" and starsign[6]:
+    #randomly pick
+if horoscope == "travel" and starsign[6]:
+    #randomly pick
+    
+if horoscope == "love" and starsign[7]:
+    #randomly picks from 3 possible horoscopes
+if horoscope == "health" and starsign[7]:
+    #randomly picks from 3 possible horoscopes
+if horoscope == "family" and starsign[7]:
+    #randomly pick
+if horoscope == "work" and starsign[7]:
+    #randomly pick
+if horoscope == "finance" and starsign[7]:
+    #randomly pick
+if horoscope == "travel" and starsign[7]:
+    #randomly pick
+    
+if horoscope == "love" and starsign[8]:
+    #randomly picks from 3 possible horoscopes
+if horoscope == "health" and starsign[8]:
+    #randomly picks from 3 possible horoscopes
+if horoscope == "family" and starsign[8]:
+    #randomly pick
+if horoscope == "work" and starsign[8]:
+    #randomly pick
+if horoscope == "finance" and starsign[8]:
+    #randomly pick
+if horoscope == "travel" and starsign[8]:
+    #randomly pick
+    
+if horoscope == "love" and starsign[9]:
+    #randomly picks from 3 possible horoscopes
+if horoscope == "health" and starsign[9]:
+    #randomly picks from 3 possible horoscopes
+if horoscope == "family" and starsign[9]:
+    #randomly pick
+if horoscope == "work" and starsign[9]:
+    #randomly pick
+if horoscope == "finance" and starsign[9]:
+    #randomly pick
+if horoscope == "travel" and starsign[9]:
+    #randomly pick
+    
+if horoscope == "love" and starsign[10]:
+    #randomly picks from 3 possible horoscopes
+if horoscope == "health" and starsign[10]:
+    #randomly picks from 3 possible horoscopes
+if horoscope == "family" and starsign[10]:
+    #randomly pick
+if horoscope == "work" and starsign[10]:
+    #randomly pick
+if horoscope == "finance" and starsign[10]:
+    #randomly pick
+if horoscope == "travel" and starsign[10]:
+    #randomly pick
+    
+if horoscope == "love" and starsign[11]:
+    #randomly picks from 3 possible horoscopes
+if horoscope == "health" and starsign[11]:
+    #randomly picks from 3 possible horoscopes
+if horoscope == "family" and starsign[11]:
+    #randomly pick
+if horoscope == "work" and starsign[11]:
+    #randomly pick
+if horoscope == "finance" and starsign[11]:
+    #randomly pick
+if horoscope == "travel" and starsign[11]:
+    #randomly pick
