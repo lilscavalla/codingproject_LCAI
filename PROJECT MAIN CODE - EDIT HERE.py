@@ -7,7 +7,7 @@ if year <= 2001:
 elif year >= 2002:
     sys.stdout.write("%s \n" % "I bet you you're addicted to TikTok")
 
-month = input("Please type the month you were born: ").lower()
+month = input("Please type out the month you were born: ").lower()
 date = int(input("Please type the date you were born: "))
 
 listofmonths = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"]
