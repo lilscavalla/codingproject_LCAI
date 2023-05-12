@@ -120,156 +120,156 @@ future = ["love", "health", "family", "work", "finance", "travel"]
 
 if horoscope == "love" and starsign[0]:
     #randomly picks from 3 possible horoscopes
-if horoscope == "health" and starsign[0]:
+elif horoscope == "health" and starsign[0]:
     #randomly picks from 3 possible horoscopes
-if horoscope == "family" and starsign[0]:
+elif horoscope == "family" and starsign[0]:
     #randomly pick
-if horoscope == "work" and starsign[0]:
+elif horoscope == "work" and starsign[0]:
     #randomly pick
-if horoscope == "finance" and starsign[0]:
+elif horoscope == "finance" and starsign[0]:
     #randomly pick
-if horoscope == "travel" and starsign[0]:
+elif horoscope == "travel" and starsign[0]:
     #randomly pick
 
-if horoscope == "love" and starsign[1]:
+elif horoscope == "love" and starsign[1]:
     #randomly picks from 3 possible horoscopes
-if horoscope == "health" and starsign[1]:
+elif horoscope == "health" and starsign[1]:
     #randomly picks from 3 possible horoscopes
-if horoscope == "family" and starsign[1]:
+elif horoscope == "family" and starsign[1]:
     #randomly pick
-if horoscope == "work" and starsign[1]:
+elif horoscope == "work" and starsign[1]:
     #randomly pick
-if horoscope == "finance" and starsign[1]:
+elif horoscope == "finance" and starsign[1]:
     #randomly pick
-if horoscope == "travel" and starsign[1]:
+elif horoscope == "travel" and starsign[1]:
     #randomly pick
 
-if horoscope == "love" and starsign[2]:
+elif horoscope == "love" and starsign[2]:
     #randomly picks from 3 possible horoscopes
-if horoscope == "health" and starsign[2]:
+elif horoscope == "health" and starsign[2]:
     #randomly picks from 3 possible horoscopes
-if horoscope == "family" and starsign[2]:
+elif horoscope == "family" and starsign[2]:
     #randomly pick
-if horoscope == "work" and starsign[2]:
+elif horoscope == "work" and starsign[2]:
     #randomly pick
-if horoscope == "finance" and starsign[2]:
+elif horoscope == "finance" and starsign[2]:
     #randomly pick
-if horoscope == "travel" and starsign[2]:
+elif horoscope == "travel" and starsign[2]:
     #randomly pick
 
-if horoscope == "love" and starsign[3]:
+elif horoscope == "love" and starsign[3]:
     #randomly picks from 3 possible horoscopes
-if horoscope == "health" and starsign[3]:
+elif horoscope == "health" and starsign[3]:
     #randomly picks from 3 possible horoscopes
-if horoscope == "family" and starsign[3]:
+elif horoscope == "family" and starsign[3]:
     #randomly pick
-if horoscope == "work" and starsign[3]:
+elif horoscope == "work" and starsign[3]:
     #randomly pick
-if horoscope == "finance" and starsign[3]:
+elif horoscope == "finance" and starsign[3]:
     #randomly pick
-if horoscope == "travel" and starsign[3]:
+elif horoscope == "travel" and starsign[3]:
     #randomly pick
 
-if horoscope == "love" and starsign[4]:
+elif horoscope == "love" and starsign[4]:
     #randomly picks from 3 possible horoscopes
-if horoscope == "health" and starsign[4]:
+elif horoscope == "health" and starsign[4]:
     #randomly picks from 3 possible horoscopes
-if horoscope == "family" and starsign[4]:
+elif horoscope == "family" and starsign[4]:
     #randomly pick
-if horoscope == "work" and starsign[4]:
+elif horoscope == "work" and starsign[4]:
     #randomly pick
-if horoscope == "finance" and starsign[4]:
+elif horoscope == "finance" and starsign[4]:
     #randomly pick
-if horoscope == "travel" and starsign[4]:
+elif horoscope == "travel" and starsign[4]:
     #randomly pick
     
-if horoscope == "love" and starsign[5]:
+elif horoscope == "love" and starsign[5]:
     #randomly picks from 3 possible horoscopes
-if horoscope == "health" and starsign[5]:
+elif horoscope == "health" and starsign[5]:
     #randomly picks from 3 possible horoscopes
-if horoscope == "family" and starsign[5]:
+elif horoscope == "family" and starsign[5]:
     #randomly pick
-if horoscope == "work" and starsign[5]:
+elif horoscope == "work" and starsign[5]:
     #randomly pick
-if horoscope == "finance" and starsign[5]:
+elif horoscope == "finance" and starsign[5]:
     #randomly pick
-if horoscope == "travel" and starsign[5]:
+elif horoscope == "travel" and starsign[5]:
     #randomly pick
     
-if horoscope == "love" and starsign[6]:
+elif horoscope == "love" and starsign[6]:
     #randomly picks from 3 possible horoscopes
-if horoscope == "health" and starsign[6]:
+elif horoscope == "health" and starsign[6]:
     #randomly picks from 3 possible horoscopes
-if horoscope == "family" and starsign[6]:
+elif horoscope == "family" and starsign[6]:
     #randomly pick
-if horoscope == "work" and starsign[6]:
+elif horoscope == "work" and starsign[6]:
     #randomly pick
-if horoscope == "finance" and starsign[6]:
+elif horoscope == "finance" and starsign[6]:
     #randomly pick
-if horoscope == "travel" and starsign[6]:
+elif horoscope == "travel" and starsign[6]:
     #randomly pick
     
-if horoscope == "love" and starsign[7]:
+elif horoscope == "love" and starsign[7]:
     #randomly picks from 3 possible horoscopes
-if horoscope == "health" and starsign[7]:
+elif horoscope == "health" and starsign[7]:
     #randomly picks from 3 possible horoscopes
-if horoscope == "family" and starsign[7]:
+elif horoscope == "family" and starsign[7]:
     #randomly pick
-if horoscope == "work" and starsign[7]:
+elif horoscope == "work" and starsign[7]:
     #randomly pick
-if horoscope == "finance" and starsign[7]:
+elif horoscope == "finance" and starsign[7]:
     #randomly pick
-if horoscope == "travel" and starsign[7]:
+elif horoscope == "travel" and starsign[7]:
     #randomly pick
     
-if horoscope == "love" and starsign[8]:
+elif horoscope == "love" and starsign[8]:
     #randomly picks from 3 possible horoscopes
-if horoscope == "health" and starsign[8]:
+elif horoscope == "health" and starsign[8]:
     #randomly picks from 3 possible horoscopes
-if horoscope == "family" and starsign[8]:
+elif horoscope == "family" and starsign[8]:
     #randomly pick
-if horoscope == "work" and starsign[8]:
+elif horoscope == "work" and starsign[8]:
     #randomly pick
-if horoscope == "finance" and starsign[8]:
+elif horoscope == "finance" and starsign[8]:
     #randomly pick
-if horoscope == "travel" and starsign[8]:
+elif horoscope == "travel" and starsign[8]:
     #randomly pick
     
-if horoscope == "love" and starsign[9]:
+elif horoscope == "love" and starsign[9]:
     #randomly picks from 3 possible horoscopes
-if horoscope == "health" and starsign[9]:
+elif horoscope == "health" and starsign[9]:
     #randomly picks from 3 possible horoscopes
-if horoscope == "family" and starsign[9]:
+elif horoscope == "family" and starsign[9]:
     #randomly pick
-if horoscope == "work" and starsign[9]:
+elif horoscope == "work" and starsign[9]:
     #randomly pick
-if horoscope == "finance" and starsign[9]:
+elif horoscope == "finance" and starsign[9]:
     #randomly pick
-if horoscope == "travel" and starsign[9]:
+elif horoscope == "travel" and starsign[9]:
     #randomly pick
     
-if horoscope == "love" and starsign[10]:
+elif horoscope == "love" and starsign[10]:
     #randomly picks from 3 possible horoscopes
-if horoscope == "health" and starsign[10]:
+elif horoscope == "health" and starsign[10]:
     #randomly picks from 3 possible horoscopes
-if horoscope == "family" and starsign[10]:
+elif horoscope == "family" and starsign[10]:
     #randomly pick
-if horoscope == "work" and starsign[10]:
+elif horoscope == "work" and starsign[10]:
     #randomly pick
-if horoscope == "finance" and starsign[10]:
+elif horoscope == "finance" and starsign[10]:
     #randomly pick
-if horoscope == "travel" and starsign[10]:
+elif horoscope == "travel" and starsign[10]:
     #randomly pick
     
-if horoscope == "love" and starsign[11]:
+elif horoscope == "love" and starsign[11]:
     #randomly picks from 3 possible horoscopes
-if horoscope == "health" and starsign[11]:
+elif horoscope == "health" and starsign[11]:
     #randomly picks from 3 possible horoscopes
-if horoscope == "family" and starsign[11]:
+elif horoscope == "family" and starsign[11]:
     #randomly pick
-if horoscope == "work" and starsign[11]:
+elif horoscope == "work" and starsign[11]:
     #randomly pick
-if horoscope == "finance" and starsign[11]:
+elif horoscope == "finance" and starsign[11]:
     #randomly pick
-if horoscope == "travel" and starsign[11]:
+elif horoscope == "travel" and starsign[11]:
     #randomly pick
