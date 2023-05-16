@@ -3,7 +3,7 @@ import sys, random
 year = int(input("Please type the year you were born: "))
 
 if year <= 2001:
-    sys.stdout.write("%s \n" % "You are old.")
+    sys.stdout.write("%s \n" % "Damn. You are old.")
 elif year >= 2002:
     sys.stdout.write("%s \n" % "I bet you you're addicted to TikTok")
 
@@ -334,7 +334,7 @@ worklist11 = []
 financelist11 = []
 travellist11 = [] 
 elif horoscope == "love" and starsign[11]:
-    #sys.stdout.write(random.choice(lovelist11)
+    sys.stdout.write(random.choice(lovelist11)
 elif horoscope == "health" and starsign[11]:
     sys.stdout.write(random.choice(healthlist11))
 elif horoscope == "family" and starsign[11]:
