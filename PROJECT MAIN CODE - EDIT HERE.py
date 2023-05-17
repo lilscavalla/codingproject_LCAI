@@ -15,102 +15,102 @@ starsign = ["Aquarius", "Pisces", "Aries", "Taurus", "Gemini", "Cancer", "Leo", 
 
 if month == "january" and 20 <= date <= 31:
     sys.stdout.write("%s \n" % "You are an Aquarius")
-    starsign[0]
+    ss = starsign[0]
 elif month == "february" and 1 <= date <= 18:
     sys.stdout.write("%s \n" % "You are an Aquarius")
-    starsign[0] #makes the programme know which starsign it has just outputted
+    ss = starsign[0] #makes the programme know which starsign it has just outputted
     
 elif month == "february" and 19 <= date <= 29:
     sys.stdout.write("%s \n" % "You are a Pisces")
-    starsign[1]
+    ss = starsign[1]
 elif month == "march" and 1 <= date <= 20:
     sys.stdout.write("%s \n" % "You are a Pisces")
-    starsign[1]
+    ss = starsign[1]
 
 if month == "february" and date >= 30:
     sys.stdout.write("%s \n" % "Try again. Obviously you can't follow simple instructions.") #stops the user inputting an invalid date for february specifically
     
 elif month == "march" and 21 <= date <= 31:
     sys.stdout.write("%s \n" % "You are an Aries")
-    starsign[2]
+    ss = starsign[2]
 elif month == "april" and 1 <= date <= 19:
     sys.stdout.write("%s \n" % "You are an Aries")
-    starsign[2]
+    ss = starsign[2]
     
 elif month == "april" and 20 <= date <= 30:
     sys.stdout.write("%s \n" % "You are a Taurus")
-    starsign[3]
+    ss = starsign[3]
 elif month == "may" and 1 <= date <= 20:
     sys.stdout.write("%s \n" % "You are a Taurus")
-    starsign[3]
+    ss = starsign[3]
 
 if month == "april" and date >= 31:
     sys.stdout.write("%s \n" % "Try again. Obviously you can't follow simple instructions.")
     
 elif month == "may" and 21 <= date <= 31:
     sys.stdout.write("%s \n" % "You are a Gemini")
-    starsign[4]
+    ss = starsign[4]
 elif month == "june" and 1 <= date <= 20:
     sys.stdout.write("%s \n" % "You are a Gemini")
-    starsign[4]
+    ss = starsign[4]
     
 elif month == "june" and 21 <= date <= 30:
     sys.stdout.write("%s \n" % "You are a Cancer")
-    starsign[5]
+    ss = starsign[5]
 elif month == "july" and 1 <= date <= 22:
     sys.stdout.write("%s \n" % "You are a Cancer")
-    starsign[5]
+    ss = starsign[5]
 
 if month == "june" and date >= 31:
     sys.stdout.write("%s \n" % "Try again. Obviously you can't follow simple instructions.")
     
 elif month == "july" and 23 <= date <= 31:
     sys.stdout.write("%s \n" % "You are a Leo")
-    starsign[6]
+    ss = starsign[6]
 elif month == "august" and 1 <= date <= 22:
     sys.stdout.write("%s \n" % "You are a Leo")
-    starsign[6]
+    ss = starsign[6]
     
 elif month == "august" and 23 <= date <= 31:
     sys.stdout.write("%s \n" % "You are a Virgo")
-    starsign[7]
+    ss = starsign[7]
 elif month == "september" and 1 <= date <= 22:
     sys.stdout.write("%s \n" % "You are a Virgo")
-    starsign[7]
+    ss = starsign[7]
     
 elif month == "september" and 23 <= date <= 30:
     sys.stdout.write("%s \n" % "You are a Libra")
-    starsign[8]
+    ss = starsign[8]
 elif month == "october" and 1 <= date <= 22:
     sys.stdout.write("%s \n" % "You are a Libra")
-    starsign[8]
+    ss = starsign[8]
 
 if month == "september" and date >= 31:
     sys.stdout.write("%s \n" % "Try again. Obviously you can't follow simple instructions.")
     
 elif month == "october" and 23 <= date <= 31:
     sys.stdout.write("%s \n" % "You are a Scorpio")
-    starsign[9]
+    ss = starsign[9]
 elif month == "november" and 1 <= date <= 21:
     sys.stdout.write("%s \n" % "You are a Scorpio")
-    starsign[9]
+    ss = starsign[9]
 
 elif month == "november" and 21 <= date <= 30:
     sys.stdout.write("%s \n" % "You are a Sagittarius")
-    starsign[10]
+    ss = starsign[10]
 elif month == "december" and 1 <= date <= 22:
     sys.stdout.write("%s \n" % "You are a Sagittarius")
-    starsign[10]
+    ss = starsign[10]
 
 if month == "november" and date >= 31:
     sys.stdout.write("%s \n" % "Try again. Obviously you can't follow simple instructions.")
     
 elif month == "december" and 23 <= date <= 31:
     sys.stdout.write("%s \n" % "You are a Capricorn")
-    starsign[11]
+    ss = starsign[11]
 elif month == "january" and 1 <= date <= 19:
     sys.stdout.write("%s \n" % "You are a Capricorn")
-    starsign[11]
+    ss = starsign[11]
 
 if month not in listofmonths or date not in range(1,32):
     sys.stdout.write("%s \n" % "Try again. Obviously you can't follow simple instructions") #stops the user inputting invalid dates in general
@@ -204,160 +204,160 @@ worklist11 = []
 financelist11 = []
 travellist11 = [] 
 
-if horoscope == "love" and starsign[0]:
+if horoscope == "love" and ss == starsign[0]:
     sys.stdout.write(random.choice(lovelist0)) #randomly picks from the list to output the horoscope
-elif horoscope == "health" and starsign[0]:
+elif horoscope == "health" and ss == starsign[0]:
     sys.stdout.write(random.choice(healthlist0))
-elif horoscope == "family" and starsign[0]:
+elif horoscope == "family" and ss == starsign[0]:
     sys.stdout.write(random.choice(familylist0))
-elif horoscope == "work" and starsign[0]:
+elif horoscope == "work" and ss == starsign[0]:
     sys.stdout.write(random.choice(worklist0))
-elif horoscope == "finance" and starsign[0]:
+elif horoscope == "finance" and ss == starsign[0]:
     sys.stdout.write(random.choice(financelist0))
-elif horoscope == "travel" and starsign[0]:
+elif horoscope == "travel" and ss == starsign[0]:
     sys.stdout.write(random.choice(travellist))
       
-elif horoscope == "love" and starsign[1]:
+elif horoscope == "love" and ss == starsign[1]:
     sys.stdout.write(random.choice(lovelist1))
-elif horoscope == "health" and starsign[1]:
+elif horoscope == "health" and ss == starsign[1]:
     sys.stdout.write(random.choice(healthlist1))
-elif horoscope == "family" and starsign[1]:
+elif horoscope == "family" and ss == starsign[1]:
     sys.stdout.write(random.choice(familylist1))
-elif horoscope == "work" and starsign[1]:
+elif horoscope == "work" and ss == starsign[1]:
     sys.stdout.write(random.choice(worklist1))
-elif horoscope == "finance" and starsign[1]:
+elif horoscope == "finance" and ss == starsign[1]:
     sys.stdout.write(random.choice(financelist1))
-elif horoscope == "travel" and starsign[1]:
+elif horoscope == "travel" and ss == starsign[1]:
     sys.stdout.write(random.choice(travellist1))
 
-elif horoscope == "love" and starsign[2]:
+elif horoscope == "love" and ss == starsign[2]:
     sys.stdout.write(random.choice(lovelist2))
-elif horoscope == "health" and starsign[2]:
+elif horoscope == "health" and ss == starsign[2]:
     sys.stdout.write(random.choice(healthlist2))
-elif horoscope == "family" and starsign[2]:
+elif horoscope == "family" and ss == starsign[2]:
     sys.stdout.write(random.choice(familylist2))
-elif horoscope == "work" and starsign[2]:
+elif horoscope == "work" and ss == starsign[2]:
     sys.stdout.write(random.choice(worklist2))
-elif horoscope == "finance" and starsign[2]:
+elif horoscope == "finance" and ss == starsign[2]:
     sys.stdout.write(random.choice(financelist2))
-elif horoscope == "travel" and starsign[2]:
+elif horoscope == "travel" and ss == starsign[2]:
     sys.stdout.write(random.choice(travellist2))
  
-elif horoscope == "love" and starsign[3]:
+elif horoscope == "love" and ss == starsign[3]:
     sys.stdout.write(random.choice(lovelist3))
-elif horoscope == "health" and starsign[3]:
+elif horoscope == "health" and ss == starsign[3]:
     sys.stdout.write(random.choice(healthlist3))
-elif horoscope == "family" and starsign[3]:
+elif horoscope == "family" and ss == starsign[3]:
     sys.stdout.write(random.choice(familylist3))
-elif horoscope == "work" and starsign[3]:
+elif horoscope == "work" and ss == starsign[3]:
     sys.stdout.write(random.choice(worklist3))
-elif horoscope == "finance" and starsign[3]:
+elif horoscope == "finance" and ss == starsign[3]:
     sys.stdout.write(random.choice(financelist3))
-elif horoscope == "travel" and starsign[3]:
+elif horoscope == "travel" and ss == starsign[3]:
     sys.stdout.write(random.choice(travellist3))
 
-elif horoscope == "love" and starsign[4]:
+elif horoscope == "love" and ss == starsign[4]:
     sys.stdout.write(random.choice(lovelist4))
-elif horoscope == "health" and starsign[4]:
+elif horoscope == "health" and ss == starsign[4]:
     sys.stdout.write(random.choice(healthlist4))
-elif horoscope == "family" and starsign[4]:
+elif horoscope == "family" and ss == starsign[4]:
     sys.stdout.write(random.choice(familylist4))
-elif horoscope == "work" and starsign[4]:
+elif horoscope == "work" and ss == starsign[4]:
     sys.stdout.write(random.choice(worklist4))
-elif horoscope == "finance" and starsign[4]:
+elif horoscope == "finance" and ss == starsign[4]:
     sys.stdout.write(random.choice(financelist4))
-elif horoscope == "travel" and starsign[4]:
+elif horoscope == "travel" and ss == starsign[4]:
     sys.stdout.write(random.choice(travellist4))
     
-elif horoscope == "love" and starsign[5]:
+elif horoscope == "love" and ss == starsign[5]:
     sys.stdout.write(random.choice(lovelist5))
-elif horoscope == "health" and starsign[5]:
+elif horoscope == "health" and ss == starsign[5]:
     sys.stdout.write(random.choice(healthlist5))
-elif horoscope == "family" and starsign[5]:
+elif horoscope == "family" and ss == starsign[5]:
     sys.stdout.write(random.choice(familylist5))
-elif horoscope == "work" and starsign[5]:
+elif horoscope == "work" and ss == starsign[5]:
     sys.stdout.write(random.choice(worklist5))
-elif horoscope == "finance" and starsign[5]:
+elif horoscope == "finance" and ss == starsign[5]:
     sys.stdout.write(random.choice(financelist5))
-elif horoscope == "travel" and starsign[5]:
+elif horoscope == "travel" and ss == starsign[5]:
     sys.stdout.write(random.choice(travellist5))
    
-elif horoscope == "love" and starsign[6]:
+elif horoscope == "love" and ss == starsign[6]:
     sys.stdout.write(random.choice(lovelist6))
-elif horoscope == "health" and starsign[6]:
+elif horoscope == "health" and ss == starsign[6]:
     sys.stdout.write(random.choice(healthlist6))
-elif horoscope == "family" and starsign[6]:
+elif horoscope == "family" and ss == starsign[6]:
     sys.stdout.write(random.choice(familylist6))
-elif horoscope == "work" and starsign[6]:
+elif horoscope == "work" and ss == starsign[6]:
     sys.stdout.write(random.choice(worklist6)
-elif horoscope == "finance" and starsign[6]:
+elif horoscope == "finance" and ss == starsign[6]:
     sys.stdout.write(random.choice(financelist6))
-elif horoscope == "travel" and starsign[6]:
+elif horoscope == "travel" and ss == starsign[6]:
     sys.stdout.write(random.choice(travellist6))
    
-elif horoscope == "love" and starsign[7]:
+elif horoscope == "love" and ss == starsign[7]:
     sys.stdout.write(random.choice(lovelist7))
-elif horoscope == "health" and starsign[7]:
+elif horoscope == "health" and ss == starsign[7]:
     sys.stdout.write(random.choice(healthlist7))
-elif horoscope == "family" and starsign[7]:
+elif horoscope == "family" and ss == starsign[7]:
     sys.stdout.write(random.choice(familylist7))
-elif horoscope == "work" and starsign[7]:
+elif horoscope == "work" and ss == starsign[7]:
     sys.stdout.write(random.choice(worklist7))
-elif horoscope == "finance" and starsign[7]:
+elif horoscope == "finance" and ss == starsign[7]:
     sys.stdout.write(random.choice(financelist7))
-elif horoscope == "travel" and starsign[7]:
+elif horoscope == "travel" and ss == starsign[7]:
     sys.stdout.write(random.choice(travellist7))
     
-elif horoscope == "love" and starsign[8]:
+elif horoscope == "love" and ss == starsign[8]:
     sys.stdout.write(random.choice(lovelist8))
-elif horoscope == "health" and starsign[8]:
+elif horoscope == "health" and ss == starsign[8]:
     sys.stdout.write(random.choice(healthlist8))
-elif horoscope == "family" and starsign[8]:
+elif horoscope == "family" and ss == starsign[8]:
     sys.stdout.write(random.choice(familylist8))
-elif horoscope == "work" and starsign[8]:
+elif horoscope == "work" and ss == starsign[8]:
     sys.stdout.write(random.choice(worklist8))
-elif horoscope == "finance" and starsign[8]:
+elif horoscope == "finance" and ss == starsign[8]:
     sys.stdout.write(random.choice(financelist8))
-elif horoscope == "travel" and starsign[8]:
+elif horoscope == "travel" and ss == starsign[8]:
     sys.stdout.write(random.choice(travellist8))
      
-elif horoscope == "love" and starsign[9]:
+elif horoscope == "love" and ss == starsign[9]:
     sys.stdout.write(random.choice(lovelist9))
-elif horoscope == "health" and starsign[9]:
+elif horoscope == "health" and ss == starsign[9]:
     sys.stdout.write(random.choice(healthlist9))
-elif horoscope == "family" and starsign[9]:
+elif horoscope == "family" and ss == starsign[9]:
     sys.stdout.write(random.choice(familylist9))
-elif horoscope == "work" and starsign[9]:
+elif horoscope == "work" and ss == starsign[9]:
     sys.stdout.write(random.choice(worklist9))
-elif horoscope == "finance" and starsign[9]:
+elif horoscope == "finance" and ss == starsign[9]:
     sys.stdout.write(random.choice(financelist9))
-elif horoscope == "travel" and starsign[9]:
+elif horoscope == "travel" and ss == starsign[9]:
     sys.stdout.write(random.choice(travellist9))
     
-elif horoscope == "love" and starsign[10]:
+elif horoscope == "love" and ss == starsign[10]:
     sys.stdout.write(random.choice(lovelist10))
-elif horoscope == "health" and starsign[10]:
+elif horoscope == "health" and ss == starsign[10]:
     sys.stdout.write(random.choice(healthlist10))
-elif horoscope == "family" and starsign[10]:
+elif horoscope == "family" and ss == starsign[10]:
     sys.stdout.write(random.choice(familylist10))
-elif horoscope == "work" and starsign[10]:
+elif horoscope == "work" and ss == starsign[10]:
     sys.stdout.write(random.choice(worklist10))
-elif horoscope == "finance" and starsign[10]:
+elif horoscope == "finance" and ss == starsign[10]:
     sys.stdout.write(random.choice(financelist10))
-elif horoscope == "travel" and starsign[10]:
+elif horoscope == "travel" and ss == starsign[10]:
     sys.stdout.write(random.choice(travellist10))
     
-elif horoscope == "love" and starsign[11]:
+elif horoscope == "love" and ss == starsign[11]:
     sys.stdout.write(random.choice(lovelist11)
-elif horoscope == "health" and starsign[11]:
+elif horoscope == "health" and ss == starsign[11]:
     sys.stdout.write(random.choice(healthlist11))
-elif horoscope == "family" and starsign[11]:
+elif horoscope == "family" and ss == starsign[11]:
     sys.stdout.write(random.choice(familylist11))
-elif horoscope == "work" and starsign[11]:
+elif horoscope == "work" and ss == starsign[11]:
     sys.stdout.write(random.choice(worklist11))
-elif horoscope == "finance" and starsign[11]:
+elif horoscope == "finance" and ss == starsign[11]:
     sys.stdout.write(random.choice(financelist11))
-elif horoscope == "travel" and starsign[11]:
+elif horoscope == "travel" and ss == starsign[11]:
     sys.stdout.write(random.choice(travellist11))
 
 if horoscope not in future:
