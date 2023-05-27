@@ -230,7 +230,7 @@ elif horoscope == "work" and ss == starsign[0]:
 elif horoscope == "finance" and ss == starsign[0]:
     slowtype(random.choice(financelist0))
 elif horoscope == "travel" and ss == starsign[0]:
-    slowtype(random.choice(travellist))
+    slowtype(random.choice(travellist0))
       
 elif horoscope == "love" and ss == starsign[1]:
     slowtype(random.choice(lovelist1))
