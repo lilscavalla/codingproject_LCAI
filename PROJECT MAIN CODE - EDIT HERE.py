@@ -128,7 +128,7 @@ elif month == "january" and 1 <= date <= 19:
 if month not in listofmonths or date not in range(1,32):
     slowtype("%s \n" % "Try again. Obviously you can't follow simple instructions") #stops the user inputting invalid dates in general
 
-slowtype("What aspect of your future would you like to find out about?\n Choose from: LOVE, HEALTH, FAMILY, WORK, FINANCE, and TRAVEL\n Input your choice here: ")
+slowtype("What aspect of your future would you like to find out about? \nChoose from: LOVE, HEALTH, FAMILY, WORK, FINANCE, and TRAVEL \nInput your choice here: ")
 horoscope = input().lower()
 future = ["love", "health", "family", "work", "finance", "travel"] #so the programme knows which horoscopes can be requested
 
