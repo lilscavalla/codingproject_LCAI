@@ -1,5 +1,5 @@
 import sys, random, time
-import horoscopes
+import horoscopes #separate file the programme uses to import the horoscopes without them taking up a load of space in this main code
 
 def slowtype(str):
     for letter in str:
