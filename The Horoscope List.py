@@ -1,5 +1,3 @@
-
-
 lovelist0 = ["You have a face only a mother could love", "I can't imagine anyone would be particularly excited to marry you", "Good luck with that"]
 healthlist0 = []
 familylist0 = ["Sometimes your family purposely don't invite you to things.", "One of your family members is out to get you.", "You will want to hit your siblings, we definitley don't suggest this..."]
@@ -61,25 +59,27 @@ healthlist8 = []
 familylist8 = ["Be wary of dinner invitations from family - they are not as innocent as they seem.", "Tension is brewing - your family may not agree with your choices this week.", "Someone in your family was swapped at birth."]
 worklist8 = []
 financelist8 = []
-travellist8 = ["Knock off purchases rarely last very long - maybe leave the gukki handbag next time.", "All the sunbeds at the beach will be taken if you get there after 10am - you will need to work on your morning routine if you want one.", "Your family will get annoyed with you for working while you are on holiday."] 
+travellist8 = ["Knock off purchases rarely last very long - maybe leave the Gukki handbag next time.", "All the sunbeds at the beach will be taken if you get there after 10am - you will need to work on your morning routine if you want one.", "Your family will get annoyed with you for working while you are on holiday."] 
 
 lovelist9 = []
 healthlist9 = []
 familylist9 = ["Take some time away from family this week - they are sick of you.", "A distant member of your family will turn up to insult you.", "You will have a gut feeling that your family went on holiday without you - they did."]
 worklist9 = []
 financelist9 = []
-travellist9 = ["A seagull will steal your doughnut and flap its wings into your face.", "Allowing other people to plan your trip doesn''t always work in your favour.", "Your new passport will only arrive the day you are planning to leave for your holiday."]
+travellist9 = ["A seagull will steal your doughnut and flap its wings into your face.", "Allowing other people to plan your trip doesn't always work in your favour.", "Your new passport will only arrive the day you are planning to leave for your holiday."]
 
 lovelist10 = []
 healthlist10 = []
 familylist10 = ["Your family have joined a cult - they will try to indoctrinate you.", "A distant member of your family will contact you about you car's extended warranty.", "You may find yourself cleaning crayon off the walls wondering where you went wrong."]
 worklist10 = []
 financelist10 = []
-travellist10 = ["Suncream will leak into you suitcase - this is unfortanate for many reasons. Firstlly, sun cream is very expensive and secondly, your clothes will be covered in it.", "There is part of me that doesn't want to tell you this but you won't find the love of your life on a beach in spain.", "If you order lamb in the mediterranean, it will most likely be goat."] 
+travellist10 = ["Suncream will leak into you suitcase - this is unfortunate for many reasons. Firstly, sun cream is very expensive and secondly, your clothes will be covered in it.", "There is part of me that doesn't want to tell you this but you won't find the love of your life on a beach in spain.", "If you order lamb in the mediterranean, it will most likely be goat."] 
 
-lovelist11 = []
+lovelist11 = ["Sometimes you just have to know when to give up.", "Maybe pick a different aspect... I don't think you'll like this one.", "AHAHAHAHAHA ah thank you, I needed a good laugh."]
 healthlist11 = []
 familylist11 = ["A distant member of your family has found your secret stash.", "You may find yourself alone at the dinner table, wondering where you went wrong.", "If you're going on a family holiday this summer, prepare for some drama."]
 worklist11 = []
 financelist11 = []
 travellist11 = ["Your plane will be delayed because you packed the wrong size bag.", "Seasickness will ruin any future sailing experiences.", "Your inability to learn the language of the country you are visiting will come back to bite you."] 
+
+
