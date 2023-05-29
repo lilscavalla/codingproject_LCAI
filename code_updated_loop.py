@@ -21,7 +21,8 @@ while True:
         slowtype("%s \n" % "I bet you're addicted to TikTok.")
     elif year >= 2016:
         slowtype("%s \n" % "You are far too young for this, go away.")
-        break
+        sys.exit()
+    break
 # this allows for different outputs based on the year, and will exit the program entirely if they're deemed "too young"
 
 
