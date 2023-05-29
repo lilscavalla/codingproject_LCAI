@@ -46,7 +46,7 @@ monthdatematrix = {
     "june": range(1, 31),
     "july": range(1, 32),
     "august": range(1, 32),
-    "sepember": range(1, 31),
+    "september": range(1, 31),
     "october": range(1, 32),
     "november": range(1, 31),
     "december": range(1, 32)
