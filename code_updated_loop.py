@@ -1,5 +1,6 @@
 import sys, random, time
 import horoscopes #separate file the programme uses to import the horoscopes without them taking up a load of space in this main code
+# currently "import horoscopes" doesn't work
 
 def slowtype(str):
     for letter in str:
@@ -7,6 +8,10 @@ def slowtype(str):
         sys.stdout.flush()
         time.sleep(0.05)
 #'slowtype' means the outputs look as though they are being typed at that moment
+
+inputmonth = []
+inputdate = []
+# empty lists, for user information to be appended into for later use
 
 slowtype("Please type the year you were born: ")
 #year = int(input()) 
@@ -24,11 +29,11 @@ while True:
         sys.exit()
     break
 # this allows for different outputs based on the year, and will exit the program entirely if they're deemed "too young"
-
+time.sleep(0.85)
 
 # listofmonths = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"] #so the programme knows what months are actual dates
 # ^^ didn't want to delete this incase the dictionary failed
-horoscopes.starsign = ["Aquarius", "Pisces", "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo", "Libra", "Scorpio", "Sagittarius", "Capricorn"] #so the programme knows what horoscopes.starsigns are
+horoscopesstarsign = ["Aquarius", "Pisces", "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo", "Libra", "Scorpio", "Sagittarius", "Capricorn"] #so the programme knows what horoscopes.starsigns are
 
 
 
@@ -47,131 +52,152 @@ monthdatematrix = {
     "december": range(1, 32)
 }
 
-slowtype("Please type out the month you were born: " )
+slowtype("Please type the month you were born: " )
 # requesting input 
 
 while True:
     month = input().lower()
+    inputmonth.append(month)
     if month in monthdatematrix:
-        slowtype("%s \n" % "Awesome!\nPlease type the date you were born:")
+        slowtype("%s \n" % "Awesome!")
+        time.sleep(0.85)
+        slowtype("Please type the date you were born: ")
         daterange = monthdatematrix[month]
+        break
     else:
-        slowtype("%s \n" % "I'm afraid that isn't a real month buddy. Try again.")
-    while True:
-        date = int(input())
-        if date in daterange:
-            slowtype("%s \n" % "Great stuff.")
-        else:
-            slowtype("%s \n" % "Try again dumbass.")
+        slowtype("I'm afraid that isn't a real month buddy. Try again. ")
+
+while month in monthdatematrix:
+    date = int(input())
+    inputdate.append(date)
+    if date in daterange:
+        slowtype("%s \n" % "Great stuff.")
+        time.sleep(0.85)
+        break
+    else:
+        slowtype("Try again dumbass. Obviously you can't follow simple instructions. ")
 
 # the while loops test for membership in the dictionary, the first tests the KEY (months)
 # the second tests the ITEM (date) in relation to the specific month, so correct month~dates are input
+# "break" exits loop after condition met
 
+for item in inputmonth:
+    for item in inputdate:
+        if month == "january" and 20 <= date <= 31:
+            slowtype("%s \n" % "You are an Aquarius")
+        elif month == "february" and 1 <= date <= 18:
+            slowtype("%s \n" % "You are an Aquarius")
+        ss = horoscopesstarsign[0] #makes the programme know which starsign it has just output
+        break
+        
+# for loop basically tests for membership in the list that the users info was appended to
+# diff loop for each ss/[index] thing because embedding 12 loops was painful
 
+for item in inputmonth:
+    for item in inputdate:
+        if month == "february" and 19 <= date <= 29:
+            slowtype("%s \n" % "You are a Pisces")
+        elif month == "march" and 1 <= date <= 20:
+            slowtype("%s \n" % "You are a Pisces")
+        ss = horoscopesstarsign[1]
+        break
 
-if month == "january" and 20 <= date <= 31:
-    slowtype("%s \n" % "You are an Aquarius")
-    ss = horoscopes.starsign[0]
-elif month == "february" and 1 <= date <= 18:
-    slowtype("%s \n" % "You are an Aquarius")
-    ss = horoscopes.starsign[0] #makes the programme know which starsign it has just outputted
+for item in inputmonth:
+    for item in inputdate:
+        if month == "march" and 21 <= date <= 31:
+            slowtype("%s \n" % "You are an Aries")
+        elif month == "april" and 1 <= date <= 19:
+            slowtype("%s \n" % "You are an Aries")
+        ss = horoscopesstarsign[2]
+        break
+
+for item in inputmonth:
+    for item in inputdate:
+        if month == "april" and 20 <= date <= 30:
+            slowtype("%s \n" % "You are a Taurus")
+        elif month == "may" and 1 <= date <= 20:
+            slowtype("%s \n" % "You are a Taurus")
+        ss = horoscopesstarsign[3]
+        break
+
+for item in inputmonth:
+    for item in inputdate:
+        if month == "may" and 21 <= date <= 31:
+            slowtype("%s \n" % "You are a Gemini")
+        elif month == "june" and 1 <= date <= 20:
+            slowtype("%s \n" % "You are a Gemini")
+        ss = horoscopesstarsign[4]
+        break
     
-elif month == "february" and 19 <= date <= 29:
-    slowtype("%s \n" % "You are a Pisces")
-    ss = horoscopes.starsign[1]
-elif month == "march" and 1 <= date <= 20:
-    slowtype("%s \n" % "You are a Pisces")
-    ss = horoscopes.starsign[1]
+for item in inputmonth:
+    for item in inputdate:
+        if month == "june" and 21 <= date <= 30:
+            slowtype("%s \n" % "You are a Cancer")
+        elif month == "july" and 1 <= date <= 22:
+            slowtype("%s \n" % "You are a Cancer")
+        ss = horoscopesstarsign[5]
+        break
 
-if month == "february" and date >= 30:
-    slowtype("%s \n" % "Try again. Obviously you can't follow simple instructions.") #stops the user inputting an invalid date for february specifically
-    
-elif month == "march" and 21 <= date <= 31:
-    slowtype("%s \n" % "You are an Aries")
-    ss = horoscopes.starsign[2]
-elif month == "april" and 1 <= date <= 19:
-    slowtype("%s \n" % "You are an Aries")
-    ss = horoscopes.starsign[2]
-    
-elif month == "april" and 20 <= date <= 30:
-    slowtype("%s \n" % "You are a Taurus")
-    ss = horoscopes.starsign[3]
-elif month == "may" and 1 <= date <= 20:
-    slowtype("%s \n" % "You are a Taurus")
-    ss = horoscopes.starsign[3]
+for item in inputmonth:
+    for item in inputdate:
+        if month == "july" and 23 <= date <= 31:
+            slowtype("%s \n" % "You are a Leo")
+        elif month == "august" and 1 <= date <= 22:
+            slowtype("%s \n" % "You are a Leo")
+        ss = horoscopesstarsign[6]
+        break
 
-if month == "april" and date >= 31:
-    slowtype("%s \n" % "Try again. Obviously you can't follow simple instructions.")
-    
-elif month == "may" and 21 <= date <= 31:
-    slowtype("%s \n" % "You are a Gemini")
-    ss = horoscopes.starsign[4]
-elif month == "june" and 1 <= date <= 20:
-    slowtype("%s \n" % "You are a Gemini")
-    ss = horoscopes.starsign[4]
-    
-elif month == "june" and 21 <= date <= 30:
-    slowtype("%s \n" % "You are a Cancer")
-    ss = horoscopes.starsign[5]
-elif month == "july" and 1 <= date <= 22:
-    slowtype("%s \n" % "You are a Cancer")
-    ss = horoscopes.starsign[5]
+for item in inputmonth:
+    for item in inputdate:    
+        if month == "august" and 23 <= date <= 31:
+            slowtype("%s \n" % "You are a Virgo")
+        elif month == "september" and 1 <= date <= 22:
+            slowtype("%s \n" % "You are a Virgo")
+        ss = horoscopesstarsign[7]
+        break
 
-if month == "june" and date >= 31:
-    slowtype("%s \n" % "Try again. Obviously you can't follow simple instructions.")
+for item in inputmonth:
+    for item in inputdate:
+        if month == "september" and 23 <= date <= 30:
+            slowtype("%s \n" % "You are a Libra")
+        elif month == "october" and 1 <= date <= 22:
+            slowtype("%s \n" % "You are a Libra")
+        ss = horoscopesstarsign[8]
+        break
     
-elif month == "july" and 23 <= date <= 31:
-    slowtype("%s \n" % "You are a Leo")
-    ss = horoscopes.starsign[6]
-elif month == "august" and 1 <= date <= 22:
-    slowtype("%s \n" % "You are a Leo")
-    ss = horoscopes.starsign[6]
-    
-elif month == "august" and 23 <= date <= 31:
-    slowtype("%s \n" % "You are a Virgo")
-    ss = horoscopes.starsign[7]
-elif month == "september" and 1 <= date <= 22:
-    slowtype("%s \n" % "You are a Virgo")
-    ss = horoscopes.starsign[7]
-    
-elif month == "september" and 23 <= date <= 30:
-    slowtype("%s \n" % "You are a Libra")
-    ss = horoscopes.starsign[8]
-elif month == "october" and 1 <= date <= 22:
-    slowtype("%s \n" % "You are a Libra")
-    ss = horoscopes.starsign[8]
+for item in inputmonth:
+    for item in inputdate:
+        if month == "october" and 23 <= date <= 31:
+            slowtype("%s \n" % "You are a Scorpio")
+        elif month == "november" and 1 <= date <= 21:
+            slowtype("%s \n" % "You are a Scorpio")
+        ss = horoscopesstarsign[9]
+        break
 
-if month == "september" and date >= 31:
-    slowtype("%s \n" % "Try again. Obviously you can't follow simple instructions.")
-    
-elif month == "october" and 23 <= date <= 31:
-    slowtype("%s \n" % "You are a Scorpio")
-    ss = horoscopes.starsign[9]
-elif month == "november" and 1 <= date <= 21:
-    slowtype("%s \n" % "You are a Scorpio")
-    ss = horoscopes.starsign[9]
+for item in inputmonth:
+    for item in inputdate:
+        if month == "november" and 21 <= date <= 30:
+            slowtype("%s \n" % "You are a Sagittarius")
+        elif month == "december" and 1 <= date <= 22:
+            slowtype("%s \n" % "You are a Sagittarius")
+        ss = horoscopesstarsign[10]
+        break
 
-elif month == "november" and 21 <= date <= 30:
-    slowtype("%s \n" % "You are a Sagittarius")
-    ss = horoscopes.starsign[10]
-elif month == "december" and 1 <= date <= 22:
-    slowtype("%s \n" % "You are a Sagittarius")
-    ss = horoscopes.starsign[10]
+for item in inputmonth:
+    for item in inputdate:
+        if month == "december" and 23 <= date <= 31:
+            slowtype("%s \n" % "You are a Capricorn")
+        elif month == "january" and 1 <= date <= 19:
+            slowtype("%s \n" % "You are a Capricorn")
+        ss = horoscopesstarsign[11]
+        break
 
-if month == "november" and date >= 31:
-    slowtype("%s \n" % "Try again. Obviously you can't follow simple instructions.")
-    
-elif month == "december" and 23 <= date <= 31:
-    slowtype("%s \n" % "You are a Capricorn")
-    ss = horoscopes.starsign[11]
-elif month == "january" and 1 <= date <= 19:
-    slowtype("%s \n" % "You are a Capricorn")
-    ss = horoscopes.starsign[11]
+time.sleep(0.85)
 
-if month not in listofmonths or date not in range(1,32):
-    slowtype("%s \n" % "Try again. Obviously you can't follow simple instructions") #stops the user inputting invalid dates in general
-
-slowtype("What aspect of your future would you like to find out about? \nChoose from: LOVE, HEALTH, FAMILY, WORK, FINANCE, and TRAVEL \nInput your choice here: ")
+slowtype("What aspect of your future would you like to find out about?") 
+time.sleep(0.2)
+slowtype(" \nChoose from: LOVE, HEALTH, FAMILY, WORK, FINANCE, and TRAVEL \nInput your choice here: ") 
+time.sleep(0.5)
 horoscope = input().lower()
 future = ["love", "health", "family", "work", "finance", "travel"] #so the programme knows which horoscopes can be requested
 
