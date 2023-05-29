@@ -8,6 +8,8 @@ def slowtype(str):
         time.sleep(0.05)
 #'slowtype' means the outputs look as though they are being typed at that moment
 
+slowtype("Hello, I am a birthday chatbot. \nI can tell you which celebrities you share a birthday with or I can tell you your horoscope. \nAll I need to know is your birthday!") )
+
 inputmonth = []
 inputdate = []
 # empty lists, for user information to be appended into for later use
