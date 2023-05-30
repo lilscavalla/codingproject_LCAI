@@ -67,7 +67,7 @@ while True:
         daterange = monthdatematrix[month]
         break
     else:
-        slowtype("I'm afraid that isn't a real month buddy. Try again. ")
+        slowtype("I'm afraid that isn't a real month buddy. Try again: ")
 
 while month in monthdatematrix:
     date = int(input())
@@ -77,7 +77,7 @@ while month in monthdatematrix:
         time.sleep(0.85)
         break
     else:
-        slowtype("Try again dumbass. Obviously you can't follow simple instructions. ")
+        slowtype("Try again dumbass. Obviously you can't follow simple instructions: ")
 
 # the while loops test for membership in the dictionary, the first tests the KEY (months)
 # the second tests the ITEM (date) in relation to the specific month, so correct month~dates are input
