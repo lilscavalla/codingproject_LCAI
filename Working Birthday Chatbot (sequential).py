@@ -6,7 +6,7 @@ def slowtype(str):
     for letter in str:
         sys.stdout.write(letter)
         sys.stdout.flush()
-        time.sleep(0.01)
+        time.sleep(0.05)
 #'slowtype' means the outputs look as though they are being typed at that moment
 
 inputmonth = []
@@ -14,6 +14,7 @@ inputdate = []
 # empty lists, for user information to be appended into for later use
 
 slowtype("Hello, I am a birthday chatbot. \nI can tell you your horoscope and which celebrities you share a birthday with. \nAll I need to know is your birthday!")
+#intro message
 
 slowtype("\nPlease type the year you were born: ")
 #year = int(input()) 
@@ -34,7 +35,6 @@ while True:
 time.sleep(0.85)
 
 listofmonths = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"] #so the programme knows what months are actual dates
-# ^^ didn't want to delete this incase the dictionary failed
 starsign = ["Aquarius", "Pisces", "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo", "Libra", "Scorpio", "Sagittarius", "Capricorn"] #so the programme knows what starsigns are
 
 
@@ -566,7 +566,7 @@ def get_famous_birthdays(date_input):
                         print(f"URL Error: {e.reason} with {celeb}")
                         
                     # This is where it prints for each celebrity, change this however you want it to be displayed
-                    slowtype(f"{i+1}. {name}, {occupation}, {birth_year}, {age}, {birthCity}, {birthState}\n{image_url}")
+                    slowtype(f"{i+1}. {name}, {occupation}, {birth_year}, {age}, {birthCity}, {birthState}\n{image_url}\n")
             
             
             else:
