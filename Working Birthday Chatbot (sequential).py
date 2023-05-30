@@ -17,7 +17,7 @@ slowtype("Hello, I am a birthday chatbot. \nI can tell you your horoscope and wh
 #intro message
 
 slowtype("\nPlease type the year you were born: ")
-#year = int(input()) 
+# requesting input
 
 while True:
     year = int(input())
@@ -36,8 +36,6 @@ time.sleep(0.85)
 
 listofmonths = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"] #so the programme knows what months are actual dates
 starsign = ["Aquarius", "Pisces", "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo", "Libra", "Scorpio", "Sagittarius", "Capricorn"] #so the programme knows what starsigns are
-
-
 
 monthdatematrix = {
     "january": range(1, 32),
@@ -68,6 +66,7 @@ while True:
         break
     else:
         slowtype("I'm afraid that isn't a real month buddy. Try again: ")
+        # loop to give the user the opportunity to type in the month again if they made a mistake
 
 while month in monthdatematrix:
     date = int(input())
@@ -78,6 +77,7 @@ while month in monthdatematrix:
         break
     else:
         slowtype("Try again dumbass. Obviously you can't follow simple instructions: ")
+        # loop to give the user the opportunity to type in the date again if they made a mistake
 
 # the while loops test for membership in the dictionary, the first tests the KEY (months)
 # the second tests the ITEM (date) in relation to the specific month, so correct month~dates are input
@@ -94,7 +94,7 @@ for item in inputmonth:
         break
         
 # for loop basically tests for membership in the list that the users info was appended to
-# diff loop for each ss/[index] thing because embedding 12 loops was painful
+# diff loop for each ss/[index] because embedding 12 loops was painful
 
 for item in inputmonth:
     for item in inputdate:
@@ -207,12 +207,13 @@ for item in inputmonth:
         break
 
 time.sleep(0.85)
+# tie delay for better flow
 
 slowtype("What aspect of your future would you like to find out about?") 
 time.sleep(0.2)
 slowtype(" \nChoose from: LOVE, HEALTH, FAMILY, WORK, FINANCE, and TRAVEL \nInput your choice here: ") 
 time.sleep(0.5)
-future = ["love", "health", "family", "work", "finance", "travel"] #so the programme knows which horoscopes can be requested
+future = ["love", "health", "family", "work", "finance", "travel"] # so the programme knows which horoscopes can be requested
 
 lovelist0 = ["You have a face only a mother could love", "I can't imagine anyone would be particularly excited to marry you", "Good luck with that"]
 healthlist0 = ["You will step on an upturned plug - I would recommend wearing shoes.", "You should stop talking so much. You'll... um... get more air in your lungs that way.", "Your hair will start falling out if you keep stressing so much."]
@@ -297,11 +298,12 @@ familylist11 = ["A distant member of your family has found your secret stash.", 
 worklist11 = ["Those deadlines are looming close... of course you leave it to the last minute.", "Have you considered telling your boss what you really think of them? It would open many doors for you. In particular, the door for the way out.", "There will be ants in the staffroom next week. It was probably because of all the crumbs you leave on the floor."]
 financelist11 = ["You're going to place a bet and win! But the winnings will be less than what you bet. What a stupid bet.", "If you think someone is screwing you this week, you are probably right. In fact, you are definitely right.", "I predict a sudden and inexplicable increase of your income. Shame it won't happen to me."]
 travellist11 = ["Your plane will be delayed because you packed the wrong size bag.", "Seasickness will ruin any future sailing experiences.", "Your inability to learn the language of the country you are visiting will come back to bite you."] 
+# All the potential horoscopes: three for each starsign and horoscope type
 
 while True:
     horoscope = input().lower()
     if horoscope == "love" and ss == starsign[0]:
-        slowtype(random.choice(lovelist0)) #randomly picks from the list to output the horoscope
+        slowtype(random.choice(lovelist0)) #randomly picks from the list of three horoscopes.
     elif horoscope == "health" and ss == starsign[0]:
         slowtype(random.choice(healthlist0))
     elif horoscope == "family" and ss == starsign[0]:
@@ -458,7 +460,7 @@ while True:
 
     if horoscope not in future:
         slowtype("%s \n" % "Did I say I could do that? You will have to start again.")
-        sys.exit()
+        sys.exit() # exits program because of user incompetence
     
     time.sleep(0.85)
     
@@ -467,13 +469,15 @@ while True:
         break
     else:
         slowtype("\nChoose from: LOVE, HEALTH, FAMILY, WORK, FINANCE, and TRAVEL \nInput your choice here: ")
-
+# loop to allow user to get a prediction from each of the horoscope types. 
+        
 slowtype("\nWould you like to know the celebrities you share a birthday with? ")
 
-if input().lower()!= "no":
+if input().lower()!= "no":  #if input is not 'no' - to account for 'yeah' 'yep' 'sure'
     slowtype("\nHere we go!")
 else:
-    sys.exit()
+    slowtype("Goodbye!")
+    sys.exit() #exits programme 
 
 def date_input_to_data(dateInput):
     dateDict = {
@@ -596,4 +600,4 @@ def loop():
 loop()
 
 slowtype("Thank you! I have been the birthday chatbot, hope you have an average day.")
-
+# exit message
